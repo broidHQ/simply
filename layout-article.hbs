@@ -19,6 +19,13 @@
     {{ghost_head}}
 
 </head>
+<script>
+    fbq('track', 'ViewContent', {
+    content_ids: '{{title}}',
+    content_type: 'blog_post',
+    });
+</script>
+
 <body class="is-article {{{block "simply_class_body"}}}" data-page="{{@blog.url}}">
 
     {{!-- Header Content --}}

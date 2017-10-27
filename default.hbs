@@ -18,6 +18,12 @@
     {{!-- Ghost outputs important style and meta data with this tag --}}
     {{ghost_head}}
 </head>
+<script>
+    fbq('track', 'ViewContent', {
+    content_ids: 'blog_home',
+    content_type: 'blog_home',
+    });
+</script>
 <body class="{{#is "home"}}is-home{{/is}} {{{block "simply_class_body"}}}" data-page="{{@blog.url}}">
 
     {{!-- Header Content --}}
