@@ -1,6 +1,11 @@
 {{!-- Layout --}}
 {{!< layout-article }}
-
+<script>
+    fbq('track', 'ViewContent', {
+    content_ids: '{{title}}',
+    content_type: 'blog_post',
+    });
+</script>
 {{!-- Image Container --}}
 {{#post}}
 
