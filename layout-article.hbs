@@ -20,9 +20,10 @@
 
 </head>
 <script>
+    var title = "{{title}}";
     fbq('track', 'ViewContent', {
-    content_ids: '{{meta_title}}',
-    content_type: 'blog_post',
+        content_ids: title,
+        content_type: 'blog_post',
     });
 </script>
 
